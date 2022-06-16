@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+   #ext{
+    display: flex;
+   }
+   #left{
+    width:20%;
+    
+   }
+   #right{
+    width:16%;
+   }
+   #mid{
+    width:65%;
+    height: 1000px;
+   }
+   #mid>div:nth-child(1){
+    height:100px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+   }
+   #mid>div:nth-child(1)>div>img{
+    width:100%;
+    height: 100%;
+   }
+   h1{
+    font-weight: 50;
+   }
+   #mid>div:nth-child(3){
+    height:100px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(1,460px);
+    
+   }
+   #mid>div:nth-child(3)>div:nth-child(1){
+    border-top:1px solid black;
+    border-right:1px solid black;
+   }
+   #mid>div:nth-child(3)>div:nth-child(2){
+    border-top:1px solid black;
+    border-left:1px solid black;
+}
+   h3{
+    font-weight: 50;
+    text-align: center;
+    margin-top: 80px;
+   }
+
+   h4{
+    font-weight: 50;
+    text-align: center;
+   }
+   input{
+   margin-left: 60px;
+   /* margin-top: 40px; */
+   width: 300px;
+   height: 27px;
+   
+   }
+   input>div{
+    margin-top: 20px;
+   }
+   a{
+    display: block;
+    margin-left: 60px;
+    margin-top: 40px;
+    color: black;
+    
+    
+   }
+   a+input{
+   
+    width:5px;
+    height: 8px;
+   
+    margin-left: 250px;
+   }
+   #submit{
+    height:30px;
+    width:110px;
+    margin-left: 170px;
+    color: white;
+    background-color: black;
+   }
+   label{
+    margin-left: 60px;
+    margin-top: 40px;
+   }
+   span+a{
+    margin-left: 100px;
+   }
+   #logo{
+    margin-left: 50px;
+    width:400px;
+    height: 170px;
+   }
+   button{
+    padding: 7px;
+    margin-left: 150px;
+    width:190px;
+    color: white;
+    background-color: black;
+   }
+   #below{
+    margin-top:-180px;
+    /* margin-left: 400px; */
+   }
+   #below>p{
+    text-align: center;
+   }
+    </style>
+</head>
+<body>
+    <div id="ext">
+        <div id="left"></div>
+        <div id="mid">
+         <div>
+            <div><img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dw67bc4699/images/banners/sign-in_d.png?yocs=s_"/></div>
+            
+         </div>
+         <div><h1>Sign In or Sign Up</h1></div>
+        
+        <div>
+            <div>
+                <form id="form">
+                    <h3>SIGN IN</h3>
+                    <h4>If you already have an account with us, sign in below</h4>
+                    <label for="">Email Address </label><br />
+                    <input id="email" type="email"  /><br />
+                    <label for="">Password </label><br />
+                    <input id="password" type="password"  /><br />
+                    <a href="">Forgot Password?</a>
+                    <input/><span>Remember Me</span>
+                    
+                    <br/>
+                    <a href="">Privacy Policy</a>
+                    <br/>
+                    <input id="submit" type="submit" value="SIGN IN"/>
+                </form>
+                
+            </div>
+              <div>
+                <h3>SIGN UP</h3>
+               <h4>Create an account to access the best of your favorite store</h4>
+               <div><img id="logo" src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dwf946a6ac/images/loyalty/July19/nonloyalty_5thmkt_signuptile_D.png?yocs=s_"/></div>
+               <button>CREATE AN ACCOUNT</button>
+              </div>
+
+        </div>
+        </div>
+        <div id="right"></div>
+    </div>
+    <div id="below">
+        <p>QUESTIONS?</p>
+    <p>We’re here for you! Call us at 1-800-756-5005.</p>
+    </div>
+    
+</body>
+</html>
+<script>
+    document.querySelector("button").addEventListener("click",signup)
+
+    function signup()
+    {
+        window.location.href="./signup.html"
+    }
+    document.querySelector("form").addEventListener("submit",signin)
+
+    function signin(event)
+    event.preventDefault();
+    {
+        alert("SIGNIN SUCCESSFULL")
+        window.location.href="./home.html"
+
+    }
+</script>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #topper{
+            width:80%;
+            height: 140px;
+          
+            margin: auto;
+        }
+        #topper>img{
+            width: 100%;
+            height:100%;
+        }
+        #mid{
+            width:80%;
+            height: 60px;
+           border-bottom: 1px solid black;
+            margin-top: 60px;
+            margin: auto;
+        }
+        #mid>h1{
+              font-weight: 50;
+              padding-top: 15px;
+        }
+        #bot{
+            width:27%;
+            height: 800px;
+            
+            margin-top: 30px; 
+            margin: auto;
+        }
+        input{
+            width:400px;
+            height: 30px;
+           margin-top: 15px;
+          margin-bottom: 15px;
+            }
+        label{
+             font-size: 15px;
+            }
+p{
+    text-align:center ;
+    font-size: 18px;
+   
+}
+a{
+    color: black;
+}
+#submit{
+    width:180px;
+    height: 35px;
+    margin-left: 120px;
+    color: white;
+    background-color: black;
+}
+    </style>
+</head>
+<body>
+    <div id="topper">
+        <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dw6f07f823/images/banners/create-account_d.png?yocs=s_" />
+    </div>
+    <div id="mid"><h1>Create an Account</h1></div>
+    <div id="bot">
+        <form>
+            <label for="">First Name</label><br />
+            <input id="first" type="text"  /><br />
+            <label for="">Last Name</label><br />
+            <input id="last" type="text"  /><br />
+            <label for="">Email</label><br />
+            <input id="add1" type="email"  /><br />
+            <label for="">Confirm Email</label><br />
+            <input id="add2" type="email"  /><br />
+            <label for="">ZIP/Postal Code</label><br />
+            <input id="zip" type="number"  /><br />
+            <label for="">Phone</label><br />
+            <input id="phone" type="number"  /><br />
+          
+            <label for="">Password</label><br />
+            <input id="pass" type="password"  /><br />
+            <p><a href="">Privacy Policy</a></p>
+           <input type="submit" id="submit" value="CREATE ACCOUNT" />
+           </form>
+           <p>Questions?</p>
+            <p> We’re here for you! Call us at 1-800-756-5005.</p>
+
+    </div>
+</body>
+</html>
+<script>
+     document.querySelector("form").addEventListener("click",signup)
+
+function signup(event)
+{
+    event.preventDefault();
+    alert("Account Created")
+    window.location.href="./signin.html"
+}
+</script>

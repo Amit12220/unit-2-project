@@ -1,0 +1,302 @@
+
+
+#one{
+    height:50px;
+   
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(1,50px);
+}
+#one>div{
+     
+}
+#one>div>a>img{
+    width:100%;
+    height:50px;
+} 
+#one>img{
+    width: 100%;
+    height: 100%;
+}
+#two{
+    height:40px;
+    
+    background-color: #95bce693;
+    
+}
+#two>div{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+#two>div>div:nth-child(1){
+    width: 10px;
+    height: 10px;
+    margin-right: 20px;
+    margin-top: 5px;
+}
+#two>div>div:nth-child(2){
+    margin-top: 10px;
+}
+#two>div>div:nth-child(3){
+    margin-top: 10px;
+}
+#two>div>div:nth-child(1)>img{
+    width: 30px;
+    height: 30px;
+    margin-top: -7px;
+    
+}
+#two>div>div:nth-child(3){
+    margin-right: 50px;
+    margin-left: 10px;
+}
+#three{
+    height:100px;
+    
+    display: flex;
+    align-items: center;
+}
+#three>div:nth-child(1){
+    height:34px;
+    width:340px;
+   
+    margin-left: 550px;
+}
+#three>div:nth-child(1)>img{
+    height:100%;
+    width:100%;
+    
+}
+#three>div:nth-child(2){
+    display: flex;
+    margin-left: 200px;
+
+}
+#three>div:nth-child(3){
+    display: flex;
+
+}
+#three>div:nth-child(2)>div>div{
+    width: 20px;
+    height: 20px;
+    
+}
+#three>div:nth-child(2)>div{
+   display:flex;
+}
+.b{
+    width: 40px;
+    height: 40px;
+   
+    margin-left: 40px;
+}
+.b>a>img{
+    width: 100%;
+    height: 100%; 
+}
+#search{
+    margin-top: -10px;
+}
+#search>button{
+    width: 30px;
+    height: 35px;
+    background-color: white;
+    margin-top:  10px;
+    margin-right: 10px;
+}
+#search>button>img{
+    width: 100%;
+    height: 100%; 
+
+}
+input{
+    margin-top: px;
+    padding: 8px;
+}
+#four{
+    height:50px;
+  border-bottom: 1px solid grey;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+   
+
+}
+a{
+          color: black;
+        text-decoration: none;
+}
+
+/*       */
+
+
+#ext{
+    display:flex;
+  }
+  #left{
+    width:15%;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+    #cont{
+        width:86%;
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      grid-template-rows: repeat(13,400px);
+      gap: 25px;
+      margin-top: 100px;
+      margin-right: 40px;
+
+    }
+    
+    #cont>div{
+     
+    }
+    #cont>div>div{
+        margin-left: 50px;
+      width:70%;
+      height:60%;
+      
+    }
+    #cont>div>div>img{
+      width:100%;
+      height:100%;
+      
+    }
+    p>a{
+        color: grey;
+        text-decoration: none;
+    }
+    #cont>div>h3{
+      text-align: center;
+      margin: 1px 50px;
+    }
+    #cont>div>h4{
+      text-align: center;
+      margin: 1px 50px;
+    }
+    #cont>div>p{
+      text-align: center;
+      margin: 10px 50px;
+    
+    }
+    p+button{
+        margin-left:25px;
+        height: 35px;
+        width: 200px;
+        background-color: black;
+        color: white;
+        cursor: pointer;
+    }
+
+/*             */
+
+#pagal{
+    width:80%;
+    margin: auto;
+    border-top: 2px solid black;
+    margin-top: 150px;
+    }
+h3{
+    margin-top: 70px;
+}
+#upper{
+width:70%;
+height:350px;
+
+margin: auto;
+display:flex;
+}
+#upper>div:nth-child(1){
+width:33%;
+
+}
+#upper>div:nth-child(2){
+width:67%;
+
+display: grid;
+grid-template-columns: repeat(4,1fr);
+grid-template-rows: repeat(1,auto);
+}
+#upper>div:nth-child(2)>div{
+
+}
+#upper>div:nth-child(2)>div>p{
+text-align: left;
+}
+#middle{
+width:70%;
+height:100px;
+
+margin: auto;
+display:flex;
+justify-content: space-between;
+}
+#middle>div:nth-child(1){
+margin-top: -40px;
+height: 25px;
+width: 33%;
+}
+#middle>div:nth-child(2){
+
+height: 100%;
+width: 43%;
+}
+#middle>div:nth-child(2)>img{
+
+height: 100%;
+width: 100%;
+}
+
+#lower{
+width:70%;
+height:150px;
+
+margin: auto;
+}
+#lower>div:nth-child(1){
+display: flex;
+/* grid-template-columns: repeat(12,70px);
+grid-template-rows: repeat(1,10px); */
+margin-top: 70px;
+}
+#lower>div:nth-child(2)>div{
+margin-top: 30px;
+margin: auto;
+}
+
+a{
+color: rgba(53, 50, 50, 0.621);
+text-decoration: none;
+font-size: 14px;
+
+}
+p{
+text-align: center;
+}
+
+
+input{
+width:184px;
+height: 20px;
+margin-top: 10px;
+margin-bottom: 10px;
+}
+label{
+font-size: 15px;
+}
+#submit{
+width:100px;
+height: 36px;
+background-color: black;
+color: white;
+}
+p+button{
+    margin-left:35px;
+    height: 35px;
+    width: 200px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        #bahari{
+            width:70%;
+           
+            margin: auto;
+        }
+       #bahari>h2{
+          font-size: 30px;
+          font-weight: 50;
+          
+        }
+   #intfirst{
+         height:220px;
+         
+         margin-top: -27px;
+   }
+   #intfirst>img{
+    width: 100%;
+    height: 100%;
+   }
+#intsecond{
+    height:150px;
+  
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(2,50px);
+    gap:20px;
+    margin-top: 50px;
+}
+#intsecond>div{
+
+}
+#intsecond>div>button{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+
+}
+#intsecond>div>button:hover{
+    background-color: rgba(128, 128, 128, 0.36);
+    color: black;
+}
+#latest{
+    height: 70px;
+   
+    margin-top: -30px;
+}
+select{
+    margin-left: 70px;
+    margin-top: -250px;
+    margin-bottom: 20px;
+    width: 150px;
+    height: 30px;
+}
+    </style>
+</head>
+<body>
+
+    <div id="bahari">
+        <h2>All Body Care</h2>
+        <div id="intfirst">
+            <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dw0817b914/images/Spring2022/tbctier_sp3_gh.jpg?yocs=s_"/>
+        </div>
+        <div id="intsecond">
+            <div><button> ALL BODY CARE</button></div>
+            <div><button> FRAGRANCE</button></div>
+            <div><button>BATH & SHOWER</button></div>
+            <div><button> MOISTURIZERS</button></div>
+            <div><button>AROMATHERAPY</button></div>
+            <div><button>MEN'S</button></div> 
+        </div>
+        <div id="latest">
+            <p>Filter By:</p>
+            <select id="pt">
+                <option>PRODUCT TYPE</option>
+            </select>
+            <select id="fc">
+                <option>FRAGRANCE CATEGORY</option>
+            </select>
+            <select id="fn">
+                <option>FRAGRANCE NAME</option>
+            </select>
+            <form id="form">
+                <select id="st">
+                    <option>SORT BY</option>
+                    <option value="htl">Price High To Low</option>
+                    <option value="lth">Price Low To High</option>
+                </select>
+                <input type="submit" id="submit" value="SORT"/>
+            </form>
+            
+        </div>
+
+    </div>
+
+
+
+
+</body>
+</html>
+<script>
+
+    var array=JSON.parse(localStorage.getItem("data"))
+   // console.log(array)
+document.querySelector("#pt").addEventListener("click",ptf)
+
+function ptf(event)
+{
+    event.preventDefault();
+    window.location.href="./sort1.html"
+}
+document.querySelector("#fc").addEventListener("click",fcf)
+
+function fcf(event)
+{
+    event.preventDefault();
+    window.location.href="./sort2.html"
+}
+document.querySelector("#fn").addEventListener("click",fnf)
+
+function fnf(event)
+{
+    event.preventDefault();
+    window.location.href="./sort1.html"
+}
+document.querySelector("#form").addEventListener("submit",abc)
+
+function abc(event)
+{
+    event.preventDefault();
+    array.forEach(function(elem){
+    //console.log(elem)
+    var selected=document.querySelector("#st").value;
+    if(selected=="htl")
+    {
+        array.sort(function(a,b){
+            return b.price-a.price
+        });
+       // console.log(array)
+       arr.forEach(function(elem){
+    var div1=document.createElement("div");
+    var div2=document.createElement("div");
+    var avatar=document.createElement("img");
+    avatar.setAttribute("src",elem.avator)
+    var h3=document.createElement("h3");
+    h3.innerText=elem.name;
+    var h4=document.createElement("h4");
+    h4.innerText=elem.qual;
+    var p=document.createElement("p");
+    p.innerText=elem.price;
+    var button=document.createElement("button");
+    button.innerText="Add To Bag";
+    div2.append(avatar);
+    div1.append(div2,h3,h4,p,button);
+    document.querySelector("#cont").append(div1);
+
+    });
+    }
+    if(selected=="lth")
+    {
+        array.sort(function(a,b){
+            return a.price-b.price
+        });
+       // console.log(array)
+       arr.forEach(function(elem){
+    var div1=document.createElement("div");
+    var div2=document.createElement("div");
+    var avatar=document.createElement("img");
+    avatar.setAttribute("src",elem.avator)
+    var h3=document.createElement("h3");
+    h3.innerText=elem.name;
+    var h4=document.createElement("h4");
+    h4.innerText=elem.qual;
+    var p=document.createElement("p");
+    p.innerText=elem.price;
+    var button=document.createElement("button");
+    button.innerText="Add To Bag";
+    div2.append(avatar);
+    div1.append(div2,h3,h4,p,button);
+    document.querySelector("#cont").append(div1);
+
+    });
+    }
+    });
+    
+}
+
+
+</script>
