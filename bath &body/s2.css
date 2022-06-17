@@ -28,6 +28,9 @@
     #cont>div{
      
     }
+    #cont>div>p{
+        /* text-decoration: line-through; */
+    }
     #cont>div>div{
         margin-left: 50px;
       width:70%;
@@ -58,7 +61,7 @@
     }
     button{
       padding:7px;
-      
+      cursor: pointer;
       margin-left: 70px;
     }
 
@@ -221,6 +224,7 @@ width:100px;
 height: 36px;
 background-color: black;
 color: white;
+cursor: pointer;
 
 }
 #line{
@@ -333,6 +337,7 @@ color: white;
     background-color: white;
     margin-top:  10px;
     margin-right: 10px;
+    cursor: pointer;
 }
 #search>button>img{
     width: 100%;

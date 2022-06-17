@@ -69,12 +69,12 @@ a{
     <div id="ext">
       <h1>PAYMENT METHOD</h1>
       <div id="int">
-        <div><input/><span>Credit card</span></div>
+        <div><input type="checkbox"/><span>Credit card</span></div>
         <div><img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/on/demandware.static/Sites-BathAndBodyWorks-Site/-/default/dw3217f22e/images/cc-strap-updated-4-4.png?yocs=o_s_" /></div>
-        <div><input/><span>Pay Pal</span><div><img id="pay" src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/on/demandware.static/-/Sites/default/dw39bcf393/images/payments/payment-ppal.svg?yocs=o_s_"/></div></div>
+        <div><input type="checkbox"/><span>Pay Pal</span><div><img id="pay" src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/on/demandware.static/-/Sites/default/dw39bcf393/images/payments/payment-ppal.svg?yocs=o_s_"/></div></div>
       </div>
       <div id="for">
-        <form>
+        <form id="form">
             <label for="">Name on Card</label><br />
             <input id="name" type="text"  /><br />
             <label for="">Number</label><br />
@@ -108,3 +108,14 @@ a{
     
 </body>
 </html>
+<script>
+    document.querySelector("#form").addEventListener("submit",final)
+
+    function final(event)
+    {
+        event.preventDefault();
+        window.location.href="./index.html";
+        alert("Your order is Booked");
+
+    }
+</script>

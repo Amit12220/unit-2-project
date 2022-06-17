@@ -90,6 +90,7 @@
     margin-left: 170px;
     color: white;
     background-color: black;
+    cursor: pointer;
    }
    label{
     margin-left: 60px;
@@ -109,6 +110,7 @@
     width:190px;
     color: white;
     background-color: black;
+    cursor: pointer;
    }
    #below{
     margin-top:-180px;
@@ -139,7 +141,7 @@
                     <label for="">Password </label><br />
                     <input id="password" type="password"  /><br />
                     <a href="">Forgot Password?</a>
-                    <input/><span>Remember Me</span>
+                    <input type="checkbox"/><span>Remember Me</span>
                     
                     <br/>
                     <a href="">Privacy Policy</a>
@@ -169,17 +171,19 @@
 <script>
     document.querySelector("button").addEventListener("click",signup)
 
-    function signup()
+    function signup(event)
     {
+        event.preventDefault();
         window.location.href="./signup.html"
     }
     document.querySelector("form").addEventListener("submit",signin)
 
     function signin(event)
-    event.preventDefault();
     {
+        event.preventDefault();
+       
+        window.location.href="./index.html"
         alert("SIGNIN SUCCESSFULL")
-        window.location.href="./home.html"
 
     }
 </script>

@@ -104,6 +104,7 @@
     background-color: white;
     margin-top:  10px;
     margin-right: 10px;
+    cursor: pointer;
 }
 #search>button>img{
     width: 100%;
@@ -291,6 +292,7 @@ width:100px;
 height: 36px;
 background-color: black;
 color: white;
+cursor: pointer;
 }
 p+button{
     margin-left:35px;

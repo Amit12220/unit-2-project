@@ -37,6 +37,7 @@ select{
     height: 30px;
 margin-top: 25px;
 margin-bottom: 25px;
+
 }
 h2{
     font-size: 25px;
@@ -56,7 +57,7 @@ h2{
     <div id="ext">
         <div id="left">
            <h2>SHIPPING ADDRESS</h2>
-           <form>
+           <form id="form">
             <label for="">First Name</label><br />
             <input id="first" type="text"  /><br />
             <label for="">Last Name</label><br />
@@ -86,28 +87,28 @@ h2{
             <input id="zip" type="number"  /><br />
             <label for="">Phone</label><br />
             <input id="phone" type="number"  /><br />
-            <input type="submit" value="GO TO BILLING"
+            <input type="submit" value="GO TO BILLING"/>
            </form>
            <div id="label">
-            <input/><span>Use Address for Billing</span>
+            <input type="checkbox"/><span>Use Address for Billing</span>
             <br/>
             <legend>Are you shipping a gift?</legend>
             <br/>
-            <input/><label>Yes</label>  <input/><label>No</label>
+            <input type="checkbox"/><label>Yes</label>  <input type="checkbox"/><label>No</label>
            </div>
            
         </div>
         <div id="right">
             <h2>SHIPPING METHOD</h2>
-            <input style="height: 10px;width:10px"/><span style="font-weight: bold;">Standard</span><span>(3-7 business days.)</span>
+            <input type="checkbox" style="height: 10px;width:10px"/><span style="font-weight: bold;">Standard</span><span>(3-7 business days.)</span>
             <br/>
             <span>Estimated delivery</span><span style="font-weight: bold;">Fri Jun 17 - Fri Jun 24</span><a style="color: black;" href="">Details</a>
                <br/>
-            <input style="height: 10px;width:10px"/><span style="font-weight: bold;">Expedited</span><span>(2 business days)</span>
+            <input type="checkbox" style="height: 10px;width:10px"/><span style="font-weight: bold;">Expedited</span><span>(2 business days)</span>
             <br/>
             <span>Estimated delivery</span><span style="font-weight: bold;">Thurs Jun 16</span><a style="color: black;" href="">Details</a>
              <br/>
-            <input style="height: 10px;width:10px"/><span style="font-weight: bold;">Overnight</span><span>(1 business day)</span>
+            <input type="checkbox" style="height: 10px;width:10px"/><span style="font-weight: bold;">Overnight</span><span>(1 business day)</span>
             <br/>
             <span>Estimated delivery</span><span style="font-weight: bold;">Wed Jun 15</span><a style="color: black;" href="">Details</a>
         </div>
@@ -116,10 +117,11 @@ h2{
 </body>
 </html>
 <script>
-    document.querySelector("form").addEventListener("click",ship)
+    document.querySelector("form").addEventListener("submit",ship)
 
-    function ship()
+    function ship(event)
     {
+        event.preventDefault();
         window.location.href="./payment.html"
     }
 

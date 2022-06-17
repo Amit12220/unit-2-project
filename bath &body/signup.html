@@ -57,6 +57,7 @@ a{
     margin-left: 120px;
     color: white;
     background-color: black;
+    cursor: pointer;
 }
     </style>
 </head>
@@ -92,12 +93,13 @@ a{
 </body>
 </html>
 <script>
-     document.querySelector("form").addEventListener("click",signup)
+     document.querySelector("form").addEventListener("submit",signup)
 
 function signup(event)
 {
     event.preventDefault();
-    alert("Account Created")
+    
     window.location.href="./signin.html"
+    alert("Account Created")
 }
 </script>

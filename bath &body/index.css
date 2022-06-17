@@ -86,26 +86,27 @@
 .b{
     width: 40px;
     height: 40px;
-   
-    margin-left: 40px;
+   margin-top: 10px;
+    margin-left: 30px;
 }
 .b>a>img{
-    width: 100%;
-    height: 100%; 
+    width: 80%;
+    height: 80%; 
+    margin-left: 10px;
 }
 #search{
     margin-top: -10px;
 }
 #search>button{
     width: 30px;
-    height: 35px;
+    height: 40px;
     background-color: white;
-    margin-top:  10px;
+    margin-top:  20px;
     margin-right: 10px;
 }
 #search>button>img{
-    width: 100%;
-    height: 100%; 
+    width: 70%;
+    height: 90%; 
 
 }
 input{

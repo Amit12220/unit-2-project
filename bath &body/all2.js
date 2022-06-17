@@ -1,157 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="all.css"/>
-</head>
-<body>
-  <div id="one">
-    <div><a href="https://www.bathandbodyworks.com/g/top-offers"><img src="https://i.ibb.co/z6rznFP/nav-1.png" /></a></div> 
-    <div><a href="https://www.bathandbodyworks.com/g/top-offers"><img src="https://i.ibb.co/mzhqKHd/Screenshot-nav-2.png" /></a></div> 
-    <div><a href="https://www.bathandbodyworks.com/g/top-offers"><img src="https://i.ibb.co/z6rznFP/nav-1.png" /></a></div> 
-    
- </div>
- <div id="two">
-     <div>
-         <div><img src="https://i.ibb.co/9WydgFj/bathlogo.png"/></div>
-         <div><span>PICK UP IN STORE</span></div>
-         <div><a href="">Set Store</a></div>
-     </div>
- </div>
- <div id="three">
-     <div><img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/on/demandware.static/Sites-BathAndBodyWorks-Site/-/default/dw3c999621/images/svg-icons/Logos-main.svg?yocs=o_s_" /></div>
-     <div>
-         <div>
-             <div><input id="input" placeholder="Search by Fragnance or products"/></div>
-             <div id="search" style="margin-left:145px;"><button><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIMAAACDCAMAAACZQ1hUAAAAYFBMVEX///8AAADs7OxRUVH4+Pjy8vL19fX8/Pw8PDzv7+/f39/MzMy2trYfHx9eXl7Y2NhFRUWhoaFra2uLi4uWlpatra0QEBAXFxdycnJjY2Pl5eV+fn4sLCxMTEwzMzPCwsI2d3ZQAAAElElEQVR4nO1aaYOiMAyV+xKhCMol/P9/udoWhCqOacLg7vo+zhgI6Xs52u52X3zxxT8CzzHrMKxNx9vi7XYdsczv2jg+n+O47fyMRbX7iw64fWOdjAecLk3/S27sy8fX35HtV3cgzJ8EQAnHMVzTg7o5q2+8suHhb6eyXssD+zh7k1+yPoqSMEySqGeNP/tnsw4x9pNXWHn0+IMoP0x+UtB7EN6fb7F6IR94NbPuP0uIXdjH46Mj+9UPvWh09kwrkZEJ1ZM1UJFkw6+PdB44Q4DTNzy4IRoMLg6RC2Yrn5i/XIUpPCbTSGySuhCDOBYOVhSpopZsLKG1sZHMxGfNQH4Pg5syquVIERlHZjUf2V00qKQnnShRLshwaiebXgoK4UKETv2FeMKbeeUZOnwoxWLG2vYiQ1sYF3a7AyprhyRJRuYXzSKa4fg4QPDyoCVQQcgD1oXhW3odU9GcEdScgD+o1bDs6TqAXHdROZ9bktJrdnr6CtEJbgKRbsEFlOeGE00Hsgt4R9MArdxOx2oR/Iu6AGaUYBLLI0KdqlHqymkBvBPKQCZ2SsjIG7g8fdAAmJyQFVdFBF9b3gDFlDs8HbgRaQiK9hwVuBPxiekg0xSI5NgG7BGCEACDmidJ0i2dmrMc0A/xDNWSbuiIugUILZfFhXQ7x7aA9ZsRdVATeFwYgIlxBR9ERweQGveh+vd8KHV8+IS1IPahAvpQ6E8lSwDrgvf1KdWeGocLzQ9r5MkW2ECYtN3kDSF4atOfEJcArps7i2zOGyAaSojFEWzxEyzwvMKFERMWTrcFj73hmZgQ/KNOMJZfSEc92SSnMBsx8tL5oDP0ag2Iy9AYca6t1wU+IL4AL9wplOOa2xbPwft0+LwiNrKIWCk2W+H1J6ObMcQ2qcbCil0QEkaU2gSvqIqn+BqtCVqYpvhu6oLQeaPHZhVCYZoHEI5BkajkOYzuLqM4hIFu6c3hiEM5/aOgiz6bBohTZ0QrYsaYtbxBcOqEaY/luZx2Vyd27JHnMDnKCWmNlZa8y6BVOIZbE29fF1iCvNaRgacud7xHdcFu/zvSiRRYvsL7zRjDQsl7N7QzBrDF7Y0psMfuQ/UyjOptidWZMYePjcRIrjN7qx2zWWyosNBHQuP9rLT4MarePn3wwKDYagzHq2hn9jKszj0GvjVzAnZ68Qx2fn/aoV8IrNlPeHC0RzbLGOJP6JJJiLuKhcEs9dhByLJu8tW3BsycRwIt0Sv2s1uKJ6s5Fvu+j/p9kasXS2WtDua3CfESvaKYP3MB7b1b8BQnCCKxs/tq4cUjDv10kQJlOWhObRPWLbz9ii5XG3FzTkyyG3R10bSP749L9qymuMpyoKvoHUFUHJvKSq+wqqYposWldsklOoPnOle4P9BdlSixE+9hDYmCsYZEwXA+YTnWkigIK0r0fdBXUQ18hkTnDVa6yXKoEt2EmIpE0cOPFhRObCNR5yPStkLMT1iO/1ii9leiEgonyM5JQJhJdJuWZibRbcr4DePwg5/H9WGKSPibEHIAl+iWUbjhOvxsx4UBZraRIr744ou/D38Ax8ou98HeUbEAAAAASUVORK5CYII=" /></button></div>
-         </div>
-         <div class="b"><a href="./signin.html"><img src="https://i.ibb.co/Syjj37W/signuplogo.png" /></a></div>
-         <div class="b"><a href="./cart.html"><img src="https://i.ibb.co/q0K4TPj/cartlogo.png" /></a></div>
-     </div>
- </div>
-<div id="four">
-   <div><a href="./all.html">ALL SALE</a></div>
-   <div><a href="./bodycare.html">BODY CARE</a></div>
-   <div><a href="./candle.html">CANDLES</a></div>
-   <div><a href="">HOME FRAGRANCE</a></div>
-   <div><a href="">HAND SOAPS & SANITIZERS</a></div>
-   <div><a href="">MEN'S</a></div>
-   <div><a href="">GIFTS</a></div>
-   <div><a href="">BEST SELLERS</a></div>
-</div>
-
-
-  <div id="ext">
-    <div id="left">
-      <p><a href="./index.html">Home</a>/All Sale</p>
-        <h4>TOP OFFERS</h4>
-        <p><a href="">$5.50 Select Men's Body Care</a></p>
-        <p><a href="">50-75% Off Select Sale Items</a></p>
-        <p><a href="">$4.95 Select Body Care</a></p>
-        <p><a href=""> 50% Off Select 3-Wick Candles</a></p>
-        <p><a href="">$3.50 Select Wallflowers</a></p>
-        <p><a href="">50% Off Select Hand Soaps</a></p> 
-        <p><a href="">$5.95 Select Single Wick Candles</a></p>
-        <p><a href="">50% Off Select Hand Sanitizers</a></p>
-        <p><a href="">25-50% Off Select Gifts & Accessories</a></p>
-        <h4>SHOP BY CATEGORY</h4>
-        <p><a href="">All Sale Body Care</a></p>
-        <p><a href="">All Sale Candles</a></p> 
-        <p><a href="">All Sale Home Fragrance</a></p>
-        <p><a href="">All Sale Hand Soaps</a></p>
-        <p><a href="">All Sale Hand Sanitizers</a></p>
-        <p><a href="">All Sale Gifts & Accessories</a></p>
-    </div>
-    <div id="cont"></div>
-   </div>
-       
-
-   <div id="pagal"></div>
-    <div id="upper">
-        <div>
-          <h3>Get email offers & the latest news from Bath & Body Works!</h3>
-          <form>
-            <label for="">Enter Email</label><br />
-            <input id="first" type="text"  /><br />
-            <label for="">Confirm email</label><br />
-            <input id="last" type="text"  />
-            
-            <input type="submit" id="submit"/>
-        </div>
-        <div> 
-         <div>
-            <h4>CUSTOMER CARE</h4>
-            <p><a href="">Help & FAQs</a></p>
-            
-            <p><a href="">Shipping</a></p>
-            
-            <p><a href="">Returns & Exchanges</a></p>
-            
-            <p><a href="">Order Tracking</a></p>
-            
-            <p><a href="">Corporate Sales & Gifts</a></p>
-            
-            <p><a href="">Contact Us</a></p>
-         </div>
-        <div>
-            <h4> MY ACCOUNT</h4>
-             <p><a href="">Sign In or Sign Up</a></p>
-             <p><a href="">Order Tracking</a></p>
-             <p><a href="">My Auto Refresh</a></p>
-             <p><a href="">My Love-It List</a></p>
-            
-     
-        </div>
-        <div>
-             <h4 href="">DISCOVER</h4>
-            <p><a href="">About Us</a></p>
-            <p><a href="">Careers</a></p>
-            <p><a href="">Gift Cards</a></p>
-            <p><a href="">Shop by Fragrance</a></p>
-            <p><a href="">Product Ingredients</a></p>
-            <p><a href="">Get Inspired</a></p>
-            <p><a href="">Diversity, Equity & Inclusion</a></p>
-          
-            
-        </div>
-        <div>
-            <h4 href="">FIND US</h4>
-            <p><a href="">Store Locator</a></p>
-            <p><a href="">Global Locations</a></p>
-        </div>
-    </div>
-    </div>
-    <div id="middle">
-        <div><img src="https://i.ibb.co/NNvWtpw/socialmedia.png" /></div>
-        <div><img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dw0c8e6af7/images/evergreen/Happiness_Guaranteedtimes2_v2.jpg?yocs=o_s_" /></div>
-    </div>
-    <div id="lower">
-        <div>
-            <div><a href="">Terms Of Use </a></div>
-            <hr/>
-            <div><a href="">Privacy Policy </a></div>
-            <hr/>
-            <div><a href=""> Security Bug Report </a></div>
-            <hr/>
-            <div><a href=""></a>California Privacy Rights </div>
-            <hr/>
-            <div><a href=""></a>Do Not Sell My Personal Information (California) </div>
-            <hr/>
-            <div><a href=""></a>Transparency in Supply Chains </div>
-            
-            <div><a href=""></a>Ad Preferences |</div>
-        </div>
-        <div><p>© 2022 Bath & Body Works Direct, Inc. All Rights Reserved.</p></div>
-    </div>
-   
-</body>
-</html>
-<script>
-
-
 var arr=[
         
     {avator:"https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw48cfba07/crop/026499664_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_",name:"Sunny Tropical Mango",qual:"3-Wick Candle",price:"$11.95"},
@@ -251,7 +97,7 @@ var arr=[
     {avator:"https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwf9cd2c8d/crop/026410863_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_",name:"Berry Waffle Cone",qual:"3-Wick Candle",price:"$11.95"},
     {avator:"https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwcf85ae23/crop/026414520_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_",name:"Cloud Nine",qual:"Fine Fragrance Mist",price:"$4.12"},
     {avator:"https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw26797728/crop/026441707_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_",name:"Raspberries & Whipped Vanilla",qual:"3-Wick Candle",price:"$11.95"},
-    {avator:"https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw2e156364/crop/026495799_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_",name:"Eucalyptus Rain",qual:"3-Wick Candle",price:" $12.25"},
+    {avator:"https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw2e156364/crop/026495799_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_",name:"Eucalyptus Rain",qual:"3-Wick Candle",price:" $11.95"},
     {avator:"https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwdcb4210e/crop/026438398_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_",name:"Mahogany Coconut",qual:"3-Wick Candle",price:"$11.95"},
    
    
@@ -301,31 +147,87 @@ var arr=[
     
 ];
 
-//console.log(arr)
+//var array=JSON.parse(localStorage.getItem("data"))
+// console.log(array)
+//func(arr)
 
+document.querySelector("#pt").addEventListener("click",ptf)
+
+function ptf(event)
+{
+ event.preventDefault();
+ window.location.href="./gifts.html"
+}
+document.querySelector("#fc").addEventListener("click",fcf)
+
+function fcf(event)
+{
+ event.preventDefault();
+ window.location.href="./candle.html"
+}
+document.querySelector("#fn").addEventListener("click",fnf)
+
+function fnf(event)
+{
+ event.preventDefault();
+ window.location.href="./gifts.html"
+}
+
+
+
+
+     arr.sort(function(a,b){
+        if(a.price<b.price)
+        {
+          return -1;
+        }
+        else if(a.price>b.price)
+        {
+          return 1;
+        }
+        else{
+          return 0;
+        }
+      
+
+     });  
+     func(arr)
+
+     document.querySelector("form").addEventListener("submit",abc)
+function func(arr)
+{
     arr.forEach(function(elem){
-    var div1=document.createElement("div");
-    var div2=document.createElement("div");
-    var avatar=document.createElement("img");
-    avatar.setAttribute("src",elem.avator)
-    var h3=document.createElement("h3");
-    h3.innerText=elem.name;
-    var h4=document.createElement("h4");
-    h4.innerText=elem.qual;
-    var p=document.createElement("p");
-    p.innerText=elem.price;
-    var button=document.createElement("button");
-    button.innerText="Add To Bag";
-    div2.append(avatar);
-    div1.append(div2,h3,h4,p,button);
-    document.querySelector("#cont").append(div1);
+        var div1=document.createElement("div");
+        var div2=document.createElement("div");
+        var avatar=document.createElement("img");
+        avatar.setAttribute("src",elem.avator)
+        var h3=document.createElement("h3");
+        h3.innerText=elem.name;
+        var h4=document.createElement("h4");
+        h4.innerText=elem.qual;
+        var p=document.createElement("p");
+        p.innerText=elem.price;
+        var button=document.createElement("button");
+        button.innerText="Add To Bag";
+        button.addEventListener("click",cart)
+        function cart()
+        {
+            fun(elem)
+        }
+        div2.append(avatar);
+        div1.append(div2,h3,h4,p,button);
+       
+        document.querySelector("#cont").append(div1);
+       
+        });
+        var x=[];
+       function fun(elem)
+       {
+       x.push(elem);
+       localStorage.setItem("cart",JSON.stringify(x)) 
+       window.location.href="./cart.html"; 
+       } 
+       localStorage.setItem("hi",JSON.stringify(arr))
+      
+}
 
-    });
-    arr.sort(function(a,b){
-
-//console.log(elem)
-return a.price-b.price;
-
-    })
-console.log(arr)
-</script>
